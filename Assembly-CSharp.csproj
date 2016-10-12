@@ -46,6 +46,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BirdScript.cs" />
+     <Compile Include="Assets\Scripts\ButtonScript.cs" />
+     <Compile Include="Assets\Scripts\Inventories.cs" />
+     <Compile Include="Assets\Scripts\PictureFrames.cs" />
+     <Compile Include="Assets\Scripts\PlayerRaycasting.cs" />
      <Compile Include="Assets\Scripts\Product.cs" />
      <Compile Include="Assets\Scripts\Sketch.cs" />
      <Compile Include="Assets\Scripts\WebRequest.cs" />
