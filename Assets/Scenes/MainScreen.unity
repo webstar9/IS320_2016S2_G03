@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 1000012059726384, guid: cf06ad5eaad3cc543950d45fb682f051, type: 2}
-  _WebsiteURL: http://infosys320pweb047.azurewebsites.net/tables/lab04product?zumo-api-version=2.0.0
+  _WebsiteURL: http://infosys320pweb047.azurewebsites.net/tables/AMBirds?ZUMO-API-VERSION=2.0.0
 --- !u!4 &1766362305
 Transform:
   m_ObjectHideFlags: 0
