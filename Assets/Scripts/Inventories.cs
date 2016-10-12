@@ -5,5 +5,4 @@ public class Inventories : MonoBehaviour {
 
     public bool pressedGFButton, pressedFFButton, pressedTFButton;
 
-
 }

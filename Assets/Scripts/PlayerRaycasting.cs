@@ -6,6 +6,7 @@ public class PlayerRaycasting : MonoBehaviour {
     public float distanceToSee;
     RaycastHit whatIHit;
     public GameObject player;
+    public 
 
 
 	// Use this for initialization
@@ -29,7 +30,14 @@ public class PlayerRaycasting : MonoBehaviour {
                     if (whatIHit.collider.gameObject.GetComponent<ButtonScript>().whatButtonAmI == ButtonScript.ButtonID.GF)
                     {
                         player.GetComponent<Inventories>().pressedGFButton = true;
-                        Destroy(whatIHit.collider.gameObject);
+                    }
+                    else if (whatIHit.collider.gameObject.GetComponent<ButtonScript>().whatButtonAmI == ButtonScript.ButtonID.FF)
+                    {
+                        player.GetComponent<Inventories>().pressedFFButton = true;
+                    }
+                    else if (whatIHit.collider.gameObject.GetComponent<ButtonScript>().whatButtonAmI == ButtonScript.ButtonID.TF)
+                    {
+                        player.GetComponent<Inventories>().pressedTFButton = true;
                     }
                 }
 
@@ -39,11 +47,33 @@ public class PlayerRaycasting : MonoBehaviour {
                     {
                         if(player.GetComponent<Inventories>().pressedGFButton == true)
                         {
-                            Destroy(whatIHit.collider.gameObject);
+                            Debug.Log("I'm clicking on the GF Picture Frame");
                         }
                         else
                         {
                             Debug.Log("Press the GF Wall Button");
+                        }
+                    }
+                    else if (whatIHit.collider.gameObject.GetComponent<PictureFrames>().whatFrameAmI == PictureFrames.PictureFrameID.FFFrame)
+                    {
+                        if (player.GetComponent<Inventories>().pressedFFButton == true)
+                        {
+                            Debug.Log("I'm clicking on the FF Picture Frame");
+                        }
+                        else
+                        {
+                            Debug.Log("Press the FF Wall Button");
+                        }
+                    }
+                    else if (whatIHit.collider.gameObject.GetComponent<PictureFrames>().whatFrameAmI == PictureFrames.PictureFrameID.TFFrame)
+                    {
+                        if (player.GetComponent<Inventories>().pressedTFButton == true)
+                        {
+                            Debug.Log("I'm clicking on the TF Picture Frame");
+                        }
+                        else
+                        {
+                            Debug.Log("Press the TF Wall Button");
                         }
                     }
                 }
