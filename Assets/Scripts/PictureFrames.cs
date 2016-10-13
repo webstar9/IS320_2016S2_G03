@@ -6,6 +6,7 @@ public class PictureFrames : MonoBehaviour
 
     public enum PictureFrameID { GFFrame, FFFrame, TFFrame };
     public PictureFrameID whatFrameAmI;
+
     public Material [] material;
     public Renderer rend;
     public GameObject player;

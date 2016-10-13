@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: f2856ed07fc9ac0409f2a97623bfed1d
-timeCreated: 1476269195
+timeCreated: 1476339608
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - material1: {fileID: 2100000, guid: 25ae48e64c88c724b893bc38817c0cb6, type: 2}
+  - material2: {fileID: 2100000, guid: 594091006ed7b124383bb14d1f2f3ede, type: 2}
+  - rend: {instanceID: 0}
+  - player: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

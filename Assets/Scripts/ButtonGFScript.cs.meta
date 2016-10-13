@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2ce09e0c8b440cc429564c28b8dbd733
+timeCreated: 1476339857
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - material1: {instanceID: 0}
+  - material2: {instanceID: 0}
+  - rend: {instanceID: 0}
+  - player: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
