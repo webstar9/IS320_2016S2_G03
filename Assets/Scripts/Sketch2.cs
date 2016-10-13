@@ -24,7 +24,6 @@ public class Sketch2 : MonoBehaviour {
         //We can now deserialize into an array of objects - in this case the class we created. The deserializer is smart enough to instantiate all the classes and populate the variables based on column name.
         Product[] products = JsonReader.Deserialize<Product[]>(jsonResponse);
 
-        int totalSoldiers = products.Length;
         int i = 0;
         //We can now loop through the array of objects and access each object individually
         foreach (Product product in products)
