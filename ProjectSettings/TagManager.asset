@@ -7,6 +7,8 @@ TagManager:
   - Buttons
   - PictureFrames
   - Maps
+  - Bird
+  - Soldier
   layers:
   - Default
   - TransparentFX
