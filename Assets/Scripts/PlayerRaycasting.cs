@@ -97,6 +97,42 @@ public class PlayerRaycasting : MonoBehaviour {
                         }
                     }
                 }
+                if (whatIHit.collider.tag == "Rating")
+                {
+                    if (whatIHit.collider.gameObject.GetComponent<Rating>().whatRatingAmI == Rating.RatingID.RATE)
+                    {
+                        if (player.GetComponent<Inventories>().pressedRating == true)
+                        {
+                            player.GetComponent<Inventories>().pressedRating = false;
+                        }
+                        else
+                        {
+                            player.GetComponent<Inventories>().pressedRating = true;
+                        }
+                    }
+                    else if (whatIHit.collider.gameObject.GetComponent<Rating>().whatRatingAmI == Rating.RatingID.GOOD)
+                    {
+                        if (player.GetComponent<Inventories>().pressedLike == true)
+                        {
+                            player.GetComponent<Inventories>().pressedLike = false;
+                        }
+                        else
+                        {
+                            player.GetComponent<Inventories>().pressedLike = true;
+                        }
+                    }
+                    else if (whatIHit.collider.gameObject.GetComponent<Rating>().whatRatingAmI == Rating.RatingID.BAD)
+                    {
+                        if (player.GetComponent<Inventories>().pressedDislike == true)
+                        {
+                            player.GetComponent<Inventories>().pressedDislike = false;
+                        }
+                        else
+                        {
+                            player.GetComponent<Inventories>().pressedDislike = true;
+                        }
+                    }
+                }
             }
         }
 	}

@@ -57,6 +57,9 @@
      <Compile Include="Assets\Scripts\PictureFrames.cs" />
      <Compile Include="Assets\Scripts\PlayerRaycasting.cs" />
      <Compile Include="Assets\Scripts\Product.cs" />
+     <Compile Include="Assets\Scripts\Rating.cs" />
+     <Compile Include="Assets\Scripts\RatingDislike.cs" />
+     <Compile Include="Assets\Scripts\RatingLike.cs" />
      <Compile Include="Assets\Scripts\Sketch.cs" />
      <Compile Include="Assets\Scripts\Sketch2.cs" />
      <Compile Include="Assets\Scripts\SoldierScript.cs" />
