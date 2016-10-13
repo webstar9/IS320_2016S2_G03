@@ -6,8 +6,6 @@ public class PlayerRaycasting : MonoBehaviour {
     public float distanceToSee;
     RaycastHit whatIHit;
     public GameObject player;
-    public 
-
 
 	// Use this for initialization
 	void Start ()
@@ -63,39 +61,39 @@ public class PlayerRaycasting : MonoBehaviour {
                     }
                 }
 
-                if (whatIHit.collider.tag == "PictureFrames")
+                if (whatIHit.collider.tag == "Maps")
                 {
                     if (whatIHit.collider.gameObject.GetComponent<PictureFrames>().whatFrameAmI == PictureFrames.PictureFrameID.GFFrame)
                     {
-                        if(player.GetComponent<Inventories>().pressedGFButton == true)
+                        if(player.GetComponent<Inventories>().pressedGFFrame == true)
                         {
-                            Debug.Log("I'm clicking on the GF Picture Frame");
+                            player.GetComponent<Inventories>().pressedGFFrame = false;
                         }
                         else
                         {
-                            Debug.Log("Press the GF Wall Button");
+                            player.GetComponent<Inventories>().pressedGFFrame = true;
                         }
                     }
                     else if (whatIHit.collider.gameObject.GetComponent<PictureFrames>().whatFrameAmI == PictureFrames.PictureFrameID.FFFrame)
                     {
-                        if (player.GetComponent<Inventories>().pressedFFButton == true)
+                        if (player.GetComponent<Inventories>().pressedFFFrame == true)
                         {
-                            Debug.Log("I'm clicking on the FF Picture Frame");
+                            player.GetComponent<Inventories>().pressedFFFrame = false;
                         }
                         else
                         {
-                            Debug.Log("Press the FF Wall Button");
+                            player.GetComponent<Inventories>().pressedFFFrame = true;
                         }
                     }
                     else if (whatIHit.collider.gameObject.GetComponent<PictureFrames>().whatFrameAmI == PictureFrames.PictureFrameID.TFFrame)
                     {
-                        if (player.GetComponent<Inventories>().pressedTFButton == true)
+                        if (player.GetComponent<Inventories>().pressedTFFrame == true)
                         {
-                            Debug.Log("I'm clicking on the TF Picture Frame");
+                            player.GetComponent<Inventories>().pressedTFFrame = false;
                         }
                         else
                         {
-                            Debug.Log("Press the TF Wall Button");
+                            player.GetComponent<Inventories>().pressedTFFrame = true;
                         }
                     }
                 }

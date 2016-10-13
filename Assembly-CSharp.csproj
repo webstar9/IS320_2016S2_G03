@@ -51,6 +51,9 @@
      <Compile Include="Assets\Scripts\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\ButtonTFScript.cs" />
      <Compile Include="Assets\Scripts\Inventories.cs" />
+     <Compile Include="Assets\Scripts\PictureFrameFF.cs" />
+     <Compile Include="Assets\Scripts\PictureFrameGF.cs" />
+     <Compile Include="Assets\Scripts\PictureFrameTF.cs" />
      <Compile Include="Assets\Scripts\PictureFrames.cs" />
      <Compile Include="Assets\Scripts\PlayerRaycasting.cs" />
      <Compile Include="Assets\Scripts\Product.cs" />

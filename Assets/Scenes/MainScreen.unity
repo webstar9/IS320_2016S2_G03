@@ -101,6 +101,7 @@ GameObject:
   - 33: {fileID: 9852933}
   - 64: {fileID: 9852932}
   - 23: {fileID: 9852931}
+  - 114: {fileID: 9852934}
   m_Layer: 0
   m_Name: GF
   m_TagString: Maps
@@ -169,6 +170,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9852929}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &9852934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9852929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185a47a2a2c1acc4eb600b2af2e4f89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatFrameAmI: 0
 --- !u!1 &18478822
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +383,7 @@ GameObject:
   - 33: {fileID: 320446634}
   - 64: {fileID: 320446633}
   - 23: {fileID: 320446632}
+  - 114: {fileID: 320446635}
   m_Layer: 0
   m_Name: TF
   m_TagString: Maps
@@ -438,6 +452,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 320446630}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &320446635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 320446630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185a47a2a2c1acc4eb600b2af2e4f89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatFrameAmI: 2
 --- !u!1 &356618201
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +659,7 @@ GameObject:
   - 33: {fileID: 442308683}
   - 64: {fileID: 442308682}
   - 23: {fileID: 442308681}
-  - 114: {fileID: 442308684}
+  - 114: {fileID: 442308685}
   m_Layer: 0
   m_Name: PictureFrameGF
   m_TagString: PictureFrames
@@ -702,7 +728,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 442308679}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &442308684
+--- !u!114 &442308685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -710,14 +736,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 442308679}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185a47a2a2c1acc4eb600b2af2e4f89d, type: 3}
+  m_Script: {fileID: 11500000, guid: cc3504becc0ba0e4fbabc72f9bd2c111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatFrameAmI: 0
-  material:
-  - {fileID: 2100000, guid: 114ab842dc719a547ab22f14a52a4d3e, type: 2}
-  - {fileID: 2100000, guid: b21dbe0d43488ea4d8a100045d17a860, type: 2}
-  - {fileID: 2100000, guid: 8f6a3a3c8bfd0434e8de9113e3b548a3, type: 2}
+  material1: {fileID: 2100000, guid: b21dbe0d43488ea4d8a100045d17a860, type: 2}
+  material2: {fileID: 2100000, guid: 114ab842dc719a547ab22f14a52a4d3e, type: 2}
   rend: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &550260346
@@ -846,7 +869,7 @@ GameObject:
   - 33: {fileID: 712144615}
   - 64: {fileID: 712144614}
   - 23: {fileID: 712144613}
-  - 114: {fileID: 712144616}
+  - 114: {fileID: 712144617}
   m_Layer: 0
   m_Name: PictureFrameFF
   m_TagString: PictureFrames
@@ -915,7 +938,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 712144611}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &712144616
+--- !u!114 &712144617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -923,14 +946,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 712144611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185a47a2a2c1acc4eb600b2af2e4f89d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d5a29ecc1aa0d94fa6803482b21eb84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatFrameAmI: 1
-  material:
-  - {fileID: 2100000, guid: 4be1d49b3b0a16b4dbc0e23a70073fad, type: 2}
-  - {fileID: 2100000, guid: 205655b1b093b8b4287815da4a0a8705, type: 2}
-  - {fileID: 2100000, guid: a4118b9b152de3f47a106f4cd343d677, type: 2}
+  material1: {fileID: 2100000, guid: 4be1d49b3b0a16b4dbc0e23a70073fad, type: 2}
+  material2: {fileID: 2100000, guid: a4118b9b152de3f47a106f4cd343d677, type: 2}
   rend: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &724143161
@@ -1052,7 +1072,7 @@ GameObject:
   - 33: {fileID: 756214235}
   - 64: {fileID: 756214234}
   - 23: {fileID: 756214233}
-  - 114: {fileID: 756214236}
+  - 114: {fileID: 756214237}
   m_Layer: 0
   m_Name: PictureFrameTF
   m_TagString: PictureFrames
@@ -1121,7 +1141,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 756214231}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &756214236
+--- !u!114 &756214237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1129,14 +1149,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 756214231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185a47a2a2c1acc4eb600b2af2e4f89d, type: 3}
+  m_Script: {fileID: 11500000, guid: b1c057f42ddb5fb4a94e3a57c56f4bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatFrameAmI: 2
-  material:
-  - {fileID: 2100000, guid: 59d8033f49b59c541877864e60da6e6b, type: 2}
-  - {fileID: 2100000, guid: d458d2e892ab4bb46a5960d86b7c5040, type: 2}
-  - {fileID: 2100000, guid: 49ec5e24c30c94d4d8aa2bc160901ee4, type: 2}
+  material1: {fileID: 2100000, guid: d458d2e892ab4bb46a5960d86b7c5040, type: 2}
+  material2: {fileID: 2100000, guid: 49ec5e24c30c94d4d8aa2bc160901ee4, type: 2}
   rend: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &1010312429
@@ -1150,6 +1167,7 @@ GameObject:
   - 33: {fileID: 1010312433}
   - 64: {fileID: 1010312432}
   - 23: {fileID: 1010312431}
+  - 114: {fileID: 1010312434}
   m_Layer: 0
   m_Name: FF
   m_TagString: Maps
@@ -1218,6 +1236,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1010312429}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1010312434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1010312429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185a47a2a2c1acc4eb600b2af2e4f89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatFrameAmI: 1
 --- !u!1001 &1019155800
 Prefab:
   m_ObjectHideFlags: 0
@@ -1542,6 +1572,9 @@ MonoBehaviour:
   pressedGFButton: 0
   pressedFFButton: 0
   pressedTFButton: 0
+  pressedGFFrame: 0
+  pressedFFFrame: 0
+  pressedTFFrame: 0
 --- !u!1 &1766362303
 GameObject:
   m_ObjectHideFlags: 0
