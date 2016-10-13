@@ -35,6 +35,7 @@ public class Sketch2 : MonoBehaviour {
             float y = 4.0f;
             float z = Random.Range(-12.0F, 12.0F);
             GameObject newSoldier = (GameObject)Instantiate(myPrefab, new Vector3(x, y, z), Quaternion.identity);
+            newSoldier.GetComponentInChildren<TextMesh>().text = soldier.Surname;
         }
     }
 

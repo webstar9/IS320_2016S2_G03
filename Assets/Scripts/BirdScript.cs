@@ -8,6 +8,7 @@ public class BirdScript : MonoBehaviour {
     Vector3 spinAxisBird = new Vector3(0, 1, 0);
     public Renderer rend;
     public GameObject player;
+    public float volume;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class BirdScript : MonoBehaviour {
             // show
             this.rend.enabled = true;
             gameObject.GetComponentInChildren<TextMesh>().characterSize = 1;
+            gameObject.GetComponentInChildren<AudioSource>().volume = 0.02f;
         }
 
         if (player.GetComponent<Inventories>().pressedFFButton == false)
@@ -41,6 +43,7 @@ public class BirdScript : MonoBehaviour {
             // hide
             this.rend.enabled = false;
             gameObject.GetComponentInChildren<TextMesh>().characterSize = 0;
+            gameObject.GetComponentInChildren<AudioSource>().volume = 0.0f;
         }
     }
 }
