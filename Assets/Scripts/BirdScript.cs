@@ -33,12 +33,14 @@ public class BirdScript : MonoBehaviour {
         {
             // show
             this.rend.enabled = true;
+            gameObject.GetComponentInChildren<TextMesh>().characterSize = 1;
         }
 
         if (player.GetComponent<Inventories>().pressedFFButton == false)
         {
             // hide
             this.rend.enabled = false;
+            gameObject.GetComponentInChildren<TextMesh>().characterSize = 0;
         }
     }
 }
