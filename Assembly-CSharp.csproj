@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Sketch.cs" />
      <Compile Include="Assets\Scripts\Sketch2.cs" />
      <Compile Include="Assets\Scripts\SoldierScript.cs" />
+     <Compile Include="Assets\Scripts\Soldiers.cs" />
      <Compile Include="Assets\Scripts\WebRequest.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

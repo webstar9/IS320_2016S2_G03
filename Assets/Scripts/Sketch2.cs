@@ -6,7 +6,7 @@ using Pathfinding.Serialization.JsonFx; //make sure you include this using
 public class Sketch2 : MonoBehaviour {
     public GameObject myPrefab;
     // Put your URL here
-    public string _WebsiteURL = "http://infosys320pweb047.azurewebsites.net/tables/AMBirds?ZUMO-API-VERSION=2.0.0";
+    public string _WebsiteURL = "http://infosys320pweb047.azurewebsites.net/tables/AMCenotaph?ZUMO-API-VERSION=2.0.0";
 
     void Start()
     {
@@ -22,14 +22,14 @@ public class Sketch2 : MonoBehaviour {
         }
 
         //We can now deserialize into an array of objects - in this case the class we created. The deserializer is smart enough to instantiate all the classes and populate the variables based on column name.
-        Product[] products = JsonReader.Deserialize<Product[]>(jsonResponse);
+        Soldiers[] soldiers = JsonReader.Deserialize<Soldiers[]>(jsonResponse);
 
         int i = 0;
         //We can now loop through the array of objects and access each object individually
-        foreach (Product product in products)
+        foreach (Soldiers soldier in soldiers)
         {
             //Example of how to use the object
-            Debug.Log("This soldier's name is: " + product.CommonName);
+            Debug.Log("This soldier's name is: " + soldier.Surname);
             i++;
             float x = Random.Range(-12.0F, 12.0F);
             float y = 4.0f;

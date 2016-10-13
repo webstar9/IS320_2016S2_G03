@@ -430,7 +430,7 @@ GameObject:
   - 4: {fileID: 356618203}
   - 114: {fileID: 356618202}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: GameObject
   m_TagString: Soldier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 1000013828707164, guid: 77eb31bcdb42c834fb5ddc62e9cb974b, type: 2}
-  _WebsiteURL: http://infosys320pweb047.azurewebsites.net/tables/AMBirds?ZUMO-API-VERSION=2.0.0
+  _WebsiteURL: http://infosys320pweb047.azurewebsites.net/tables/AMCenotaph?ZUMO-API-VERSION=2.0.0
 --- !u!4 &356618203
 Transform:
   m_ObjectHideFlags: 0
