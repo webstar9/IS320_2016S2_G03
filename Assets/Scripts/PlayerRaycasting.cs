@@ -29,15 +29,37 @@ public class PlayerRaycasting : MonoBehaviour {
                 {
                     if (whatIHit.collider.gameObject.GetComponent<ButtonScript>().whatButtonAmI == ButtonScript.ButtonID.GF)
                     {
-                        player.GetComponent<Inventories>().pressedGFButton = true;
+                        if(player.GetComponent<Inventories>().pressedGFButton == false)
+                        {
+                            player.GetComponent<Inventories>().pressedGFButton = true;
+                        }
+                        else
+                        {
+                            player.GetComponent<Inventories>().pressedGFButton = false;
+                        }
+
                     }
                     else if (whatIHit.collider.gameObject.GetComponent<ButtonScript>().whatButtonAmI == ButtonScript.ButtonID.FF)
                     {
-                        player.GetComponent<Inventories>().pressedFFButton = true;
+                        if (player.GetComponent<Inventories>().pressedFFButton == false)
+                        {
+                            player.GetComponent<Inventories>().pressedFFButton = true;
+                        }
+                        else
+                        {
+                            player.GetComponent<Inventories>().pressedFFButton = false;
+                        }
                     }
                     else if (whatIHit.collider.gameObject.GetComponent<ButtonScript>().whatButtonAmI == ButtonScript.ButtonID.TF)
                     {
-                        player.GetComponent<Inventories>().pressedTFButton = true;
+                        if (player.GetComponent<Inventories>().pressedTFButton == false)
+                        {
+                            player.GetComponent<Inventories>().pressedTFButton = true;
+                        }
+                        else
+                        {
+                            player.GetComponent<Inventories>().pressedTFButton = false;
+                        }
                     }
                 }
 
